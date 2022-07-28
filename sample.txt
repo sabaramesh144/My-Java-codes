@@ -183,6 +183,56 @@ Name :kohliPostion :right-hand batsmanJersy no :18,india
 Name :b.kumarPostion :right-arm fast medium bowlerJersy no :15,india
 
 
+----------------------------------------------------------------------------------------
+interface example program
+
+interface ipl
+{
+    void teamname();
+    void trophies();
+    void captain();
+}
+
+
+    
+public class team implements ipl
+{
+    
+    
+         public void teamname()
+         {
+           System.out.println("Team name:"+"ChennaiSuperkings");
+             }
+     
+        public void trophies()
+    {
+        System.out.println("Trophies:"+"04");
+    }
+      public    void captain()
+         {
+    System.out.println("Captain:"+"Ms.Dhoni");
+    }
+    
+    
+    
+
+    public static void main(String args[]) {
+      ipl t1=new team();
+      t1.teamname();
+      t1.trophies();
+      t1.captain();
+      
+    }
+}
+
+
+
+output
+
+
+Team name:ChennaiSuperkings
+Trophies:04
+Captain:Ms.Dhoni
 
 
 
