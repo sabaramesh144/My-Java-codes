@@ -234,6 +234,71 @@ Team name:ChennaiSuperkings
 Trophies:04
 Captain:Ms.Dhoni
 
+----------------------------------------------------------------------------------------------
+interface ipl
+	//parent_class1
+
+{
+    void teamname();
+    void trophies();
+    void captain();
+   }
+interface ground extends ipl
+    //parent_class2
+    {
+    void homeground();
+	
+	}
+ 
+
+//Multiple_inherritance_byusing_interface
+    
+class team implements ground,ipl
+{
+    
+    
+         public void teamname()
+         {
+           System.out.println("Team name:"+"ChennaiSuperkings");
+             }
+     
+        public void trophies()
+       {
+        System.out.println("Trophies:"+"04");
+            }
+      public    void captain()
+         {
+    System.out.println("Captain:"+"Ms.Dhoni");
+              }
+	public void homeground()
+       {
+    System.out.println("Ground:"+"chepauk");
+              }
+
+    
+    public static void main(String args[]) {
+      team t1=new team();
+      t1.teamname();
+      t1.trophies();
+      t1.captain();
+      t1.homeground();
+        
+    
+
+    
+    
+      
+    }
+}
+
+output
+Team name:ChennaiSuperkings
+Trophies:04
+Captain:Ms.Dhoni
+Ground:chepauk
+---------------------------------------------------------------
+
+
 
 
 
