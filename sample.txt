@@ -243,7 +243,7 @@ interface ipl
     void trophies();
     void captain();
    }
-interface ground extends ipl
+interface ground 
     //parent_class2
     {
     void homeground();
@@ -362,6 +362,46 @@ Ground:chepauk
 20over
 -------------------------------------------------------------------------
 
+super key word
+
+
+class leftsideroad
+  {
+	  void vechile()
+	  {
+	   System.out.println("bike is running");
+	  }
+  }
+    class rightsideroad extends leftsideroad
+	{
+	   void vechile()
+	   {
+	     System.out.println("car is running");
+	   }
+	   
+	  { 
+	    super.vechile();
+      }
+	
+    
+    public static void main(String args[]) {
+
+    rightsideroad r1=new rightsideroad();
+	r1.vechile();
+
+
+
+
+    }
+}
+
+
+
+output
+bike is running
+car is running
+
+--------------------------------------------------------------------------------------------------------------------
 
 
 
