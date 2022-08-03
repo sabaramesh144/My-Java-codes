@@ -439,15 +439,126 @@ black
 white
 
 ---------------------------------------------------------------------------------------------------
-s
-f
+
+package practice;
+
+public class bank {
+ 
+ String name;
+ int actnum;
+ static final String bankname="indianbank";
+ private double balance;
+ private int pin;
+  void display()
+  {
+   System.out.println("Name:"+name);
+   System.out.println("Accountnumber:"+actnum);
+   System.out.println(bankname);
+  }
+
+
+ public static void main(String[] args) {
+  // TODO Auto-generated method stub
+ bank b1=new bank();
+ 
+ b1.display();
+ 
+
+ }
+
+}
+
+
+Output
+Name:null
+Accountnumber:0
+indianbank
+
+-------------------------------------------------------------------------------------------------------------
+package practice;
+
+public class bank {
+ 
+ String name;
+ int actnum;
+ static final String bankname="indianbank";
+ private double balance;
+ private int pin;
+
+  void display()
+  {
+   System.out.println("Name:"+name);
+   System.out.println("Accountnumber:"+actnum);
+   System.out.println(bankname);
+   System.out.println(pin);
+   System.out.println(balance);
+  }
+
+  public int getpin()
+  {
+   return pin;
+   
+  }  
+  public double getbalance()
+
+{
+ return balance;
+
+ }
+  
+  public void setpin(int epin)
+  
+  {  
+      pin=epin;  
+  }  
+  
+ private void setbalance(double ammount)
+  
+  {  
+  balance=balance+ammount;
+  }  
+  
+  
+  
+
+ public static void main(String[] args) {
+  // TODO Auto-generated method stub
+ bank b1=new bank();
+ bank b2=new bank();
+ 
+ 
+    b1.name="ram";
+    b1.actnum=778852888;
+    b1.setpin(4321);
+    b1.setbalance(850);
+    b1.display();
+    b2.name="dev";
+    b2.actnum=44442888;
+    b2.setpin(4021);
+    b2.setbalance(350);
+    b2.display();
+    
+ }
+
+}
 
 
 
 
 
+ouput
+Name:ram
+Accountnumber:778852888
+indianbank
+4321
+850.0
+Name:dev
+Accountnumber:44442888
+indianbank
+4021
+350.0
 
-
+---------------------------------------------------------
 
 
 
