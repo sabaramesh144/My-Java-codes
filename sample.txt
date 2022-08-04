@@ -562,7 +562,66 @@ indianbank
 
 
 
+package practice;
 
+public class bank {
+	
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+	System.out.println("The maxiumum value of"+Math.max(4,7.5));	
+	System.out.println("The minimum value of"+Math.min(5,2));
+	System.out.println("The cube root of 8.2 : "+Math.cbrt(8.2));
+	System.out.println("The square root of 7 :"+Math.sqrt(7));
+	System.out.println("The power of "+Math.pow(2,2)); 
+	System.out.println("the value of PI"+Math.PI);
+	System.out.println("The absolute value 8:"+Math.abs(8));
+	System.out.println("The round value of 2.3:"+Math.round(2.3));
+	System.out.println("The ceil value 5.3 :"+Math.ceil(5.3));
+	System.out.println("The floor div value"+Math.floorDiv(5,8));
+	System.out.println("The random value "+Math.random());
+	System.out.println("The rint value of"+Math.rint(5.4));
+	System.out.println("The ulp value of "+Math.ulp(4.5));
+        System.out.println("The sum of two number"+Math.addExact(3, 2));
+        System.out.println("The sub of two number"+Math.subtractExact(3, 2));
+        System.out.println("The multiply two number"+Math.multiplyExact(3, 2));
+        System.out.println("The increment of value of 6 :"+Math.incrementExact(6));
+        System.out.println("The decrement value of 7 :"+Math.decrementExact(7));
+        System.out.println("The negative value of 8"+Math.negateExact(8));
+         System.out.println("The log*10 "+Math.log10(2.3));
+	//Math.inc
+	
+	}
+	
+	output
+	
+	
+	The maxiumum value of7.5
+The minimum value of2
+The cube root of 8.2 : 2.0165296752181043
+The square root of 7 :2.6457513110645907
+The power of 4.0
+the value of PI3.141592653589793
+The absolute value 8:8
+The round value of 2.3:2
+The ceil value 5.3 :6.0
+The floor div value0
+The random value 0.6993348909302473
+The rint value of5.0
+The ulp value of 8.881784197001252E-16
+The sum of two number5
+The sub of two number1
+The multiply two number6
+The increment of value of 6 :7
+The decrement value of 7 :6
+The negative value of 8-8
+The log*10 0.36172783601759284
+----------------------------------------------------------------------
+	
 
 
 
