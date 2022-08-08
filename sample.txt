@@ -622,8 +622,43 @@ The negative value of 8-8
 The log*10 0.36172783601759284
 
 
---------------------------x--------------------------------------------
+----------------------------------------------------------------------
 	
+constructor
+
+package practice;
+
+public class shop {
+	
+	int a;
+	int b;
+	int c;
+	
+	shop(int a, int b, int c){
+	
+
+	this.a=a;
+	this.b=b;
+	this.c=c;
+	}
+	
+	void display()
+	{
+		System.out.println(a+" "+b+" "+c);
+	}
+	
+	public static void main(String[] args) {
+
+		shop s1=new shop(1,2,3);
+		s1.display();
+
+	}
+
+}
+
+
+output
+1 2 3
 
 
 
