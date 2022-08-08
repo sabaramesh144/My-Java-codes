@@ -659,6 +659,79 @@ public class shop {
 
 output
 1 2 3
+---------------------------------------------------------------------------
+
+package practice;
+
+public class shop {
+	
+	String name;
+	 int price;
+	static String branch="chennai";
+		
+	
+	
+	
+	shop(String name, int price){
+		
+
+	this.name=name;
+	this.price=price;
+
+	}
+	
+
+	
+	shop(String name, int price,String branch){ // extra parameter
+		
+		this.name=name;
+		this.price=price;
+        this.branch=branch;//reusing constructor
+		}
+	
+	
+	
+	
+	void display()
+	{
+		System.out.println(name+" "+price+" "+branch);
+		
+	}
+   
+	
+	
+	
+	
+	public static void main(String[] args) {
+
+		shop s1=new shop("Ram",50);
+		shop s2=new shop("Dev",1500,"tirchy");
+		
+		s1.display();
+		s2.display();
+		if (branch =="chennai")
+		{
+			System.out.println("you have 50% discount");
+		}
+		
+		else 
+		{ 
+			System.out.println("you have no discount");
+		}
+	}
+
+}
+  
+  
+  
+  output
+  
+  Ram 50 tirchy
+Dev 1500 tirchy
+you have no discount
+
+
+
 
 
 
