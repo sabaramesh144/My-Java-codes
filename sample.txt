@@ -730,7 +730,66 @@ public class shop {
 Dev 1500 tirchy
 you have no discount
 
+-------------------------------------------------------------------------------------------------------------------
+package practice;
 
+public class shop {
+	
+	String name;
+	 int price;
+	String branch;
+		
+	
+	
+	
+	shop(String name, int price){
+		
+
+	this.name=name;
+	this.price=price;
+
+	}
+	
+
+	
+	shop(String name, int price,String branch){ // extra parameter
+		
+		this.name=name;
+		this.price=price;
+        this.branch=branch;//reusing constructor
+		}
+	
+	
+	
+	
+	void display()
+	{
+		System.out.println(name+" "+price+" "+branch);
+		
+	}
+   
+	
+	
+	
+	
+	public static void main(String[] args) {
+
+		shop s1=new shop("Ram",50);
+		shop s2=new shop("Dev",1500,"tirchy");
+		
+		s1.display();
+		s2.display();
+
+
+}
+}
+
+output
+Ram 50 null
+Dev 1500 tirchy
+-------------------------------------------------------------------
+  
+  
 
 
 
