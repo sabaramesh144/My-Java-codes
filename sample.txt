@@ -788,9 +788,89 @@ output
 Ram 50 null
 Dev 1500 tirchy
 -------------------------------------------------------------------
+package practice;
+
+public class shop {
+	
+	String name;
+	 int price;
+	
+	
+	
+	
+	shop(String n, int p){
+		
+
+	name=n;
+	price=p;
+
+	}
+	
+
+	
+
+	
+	
+	
+	void display()
+	{
+		System.out.println("Name :"+name+" "+"Price :"+price);
+		
+	}
+   
+	
+	
+	
+	
+	public static void main(String[] args) {
+
+		shop s1=new shop("Ram",50);
+		shop s2=new shop("Dev",1500);
+		
+		s1.display();
+		s2.display();
+		
+	
+
+
+}
+}
   
   
+  Output
+  
+  Name :Ram Price :50
+  Name :Dev Price :1500
+-------------------------------------------------------------
+Default constructor
+
+package practice;
+
+public class shop {
+	
+	String name;
+	 int price;
+	
+	
+	void display()
+	{
+		System.out.println("Name :"+name+" "+"Price :"+price);
+		
+	}
+   
+	
+	
+	
+	
+	public static void main(String[] args) {
+
+		shop s1=new shop();
+		shop s2=new shop();
+		
+	
 
 
-
+}
+}
+  
 
