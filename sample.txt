@@ -849,4 +849,65 @@ vdominos v1 =new vdominos(1);
 output
 one plus one offer
 choco lava is free
+-----------------------------------------------------------------------------------------------------
+this ();
+package practice;
+
+ class dominos {// parent
+
+  dominos()// constructor
+  {
+	System.out.println("by one get one");  
+	  
+  }
+   
+  
+  dominos(int a)// constructor
+  {
+	  this();
+	System.out.println("one plus one offer");  
+	
+  }
+	
+}	
+
+class ndominos extends dominos{// child 1
+
+
+	ndominos() // constructor
+	{
+		System.out.println("by one get one");	
+		
+	}
+
+}
+
+public class vdominos extends dominos{ // child 2
+
+  
+   vdominos(int a)// constructor
+	{
+	    super(4);
+		System.out.println("choco lava is free");	
+		
+	}
+
+
+
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+vdominos v1 =new vdominos(1);
+
+
+
+	}
+
+}
+output
+
+by one get one
+one plus one offer
+choco lava is free
 
