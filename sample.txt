@@ -788,89 +788,65 @@ output
 Ram 50 null
 Dev 1500 tirchy
 -------------------------------------------------------------------
-package practice;
-
-public class shop {
-	
-	String name;
-	 int price;
-	
-	
-	
-	
-	shop(String n, int p){
-		
-
-	name=n;
-	price=p;
-
-	}
-	
-
-	
-
-	
-	
-	
-	void display()
-	{
-		System.out.println("Name :"+name+" "+"Price :"+price);
-		
-	}
-   
-	
-	
-	
-	
-	public static void main(String[] args) {
-
-		shop s1=new shop("Ram",50);
-		shop s2=new shop("Dev",1500);
-		
-		s1.display();
-		s2.display();
-		
-	
-
-
-}
-}
-  
-  
-  Output
-  
-  Name :Ram Price :50
-  Name :Dev Price :1500
--------------------------------------------------------------
-Default constructor
+Super();
 
 package practice;
 
-public class shop {
+ class dominos {// parent
+
+  dominos()// constructor
+  {
+	System.out.println("by one get one");  
+	  
+  }
+   
+  
+  dominos(int a)// constructor
+  {
+	  
+	System.out.println("one plus one offer");  
 	
-	String name;
-	 int price;
+  }
 	
-	
-	void display()
+}	
+
+class ndominos extends dominos{// child 1
+
+
+	ndominos() // constructor
 	{
-		System.out.println("Name :"+name+" "+"Price :"+price);
+		System.out.println("by one get one");	
 		
 	}
-   
-	
-	
-	
+
+}
+
+public class vdominos extends dominos{ // child 2
+
+  
+   vdominos(int a)// constructor
+	{
+	    super(4);
+		System.out.println("choco lava is free");	
+		
+	}
+
+
+
+
 	
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+vdominos v1 =new vdominos(1);
 
-		shop s1=new shop();
-		shop s2=new shop();
-		
-	
 
+
+	}
 
 }
-}
-  
+
+
+output
+one plus one offer
+choco lava is free
 
