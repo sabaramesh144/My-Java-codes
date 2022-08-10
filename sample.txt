@@ -911,3 +911,27 @@ by one get one
 one plus one offer
 choco lava is free
 
+----------------------------------------------------------------------------------------------
+
+package practice;
+
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int series[]= {1,51,23,65,70,6};
+      System.out.println("In fourth series the score of batsman  "+series[3]);
+	}
+
+}
+
+Output
+
+In fourth series the score of batsman  65
+
+
+
+
+
+
