@@ -958,7 +958,33 @@ Total run scored by batsman in series
 65
 70
 6
+----------------------------------------------------------------------------------------------------------------
+Loop in array
+package practice;
+
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Total run scored by batsman in series");
+		int series[]= {1,51,23,65,70,6};
+		 int run=0;
+		for(int i=0;i<series.length;i++)
+			
+			run = run+ series[i];  //0+1=1,1+51=53,53+23=76
+		
+			System.out.println(run);
 
 
+		
+      	}
+
+}
+
+
+Output
+
+Total run scored by batsman in series
+216
 
 
