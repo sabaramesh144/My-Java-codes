@@ -987,4 +987,38 @@ Output
 Total run scored by batsman in series
 216
 
+----------------------------------------------------------------------------------
+
+package practice;
+
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int series[]= {1,51,23,65,70,6};
+		 int run=0;
+		 float avg=0;
+		for(int i=0;i<series.length;i++)
+			
+			run = run+ series[i];  //0+1=1,1+51=53,53+23=76
+		
+			System.out.println("Total run scored by batsman in series  "+run);
+
+			avg=run/series.length;
+			
+			System.out.println("The average runs of series  "+avg);
+			
+
+      	}
+	
+             
+}
+
+
+output
+Total run scored by batsman in series  216
+The average runs of series  36.0
+
+
 
