@@ -930,7 +930,34 @@ Output
 
 In fourth series the score of batsman  65
 
+-------------------------------------------------------------------------------------------------------------
 
+package practice;
+
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Total run scored by batsman in series");
+		int series[]= {1,51,23,65,70,6};
+		
+		for(int i=0;i<series.length;i++)
+			
+			System.out.println(series[i]);
+		
+      	}
+
+}
+
+output
+
+Total run scored by batsman in series
+1
+51
+23
+65
+70
+6
 
 
 
