@@ -1020,5 +1020,93 @@ output
 Total run scored by batsman in series  216
 The average runs of series  36.0
 
+************************************************************************************************************
+
+package practice;
+
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int ar[]= {1,51,23,615,70,63};
+		int max = ar[0];
+		for(int i = 1; i < ar.length;i++)
+		{
+			if(ar[i] > max)
+			{
+				max = ar[i];
+			}
+		}
+		
+		System.out.println("The Given Array Element is:");
+		for(int i = 0; i < ar.length;i++)
+		{
+			System.out.println(ar[i]);
+		}
+		
+		System.out.println("From The Array Element Maximum Number is:" + max);
+      	}
+	
+             
+}
+
+Output
+
+The Given Array Element is:
+1
+51
+23
+615
+70
+63
+From The Array Element Maximum Number is:615
+
+********************************************************************************************************************
+minimum nummber
+
+
+package practice;
+
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int ar[]= {1,51,23,615,70,63};
+		int min = ar[0];
+		for(int i = 1; i < ar.length;i++)
+		{
+			if(ar[i] < min)
+			{
+				min = ar[i];
+			}
+		}
+		
+		System.out.println("The Given Array Element is:");
+		for(int i = 0; i < ar.length;i++)
+		{
+			System.out.println(ar[i]);
+		}
+		
+		System.out.println("From The Array Element Minimum Number is:" + min);
+      	}
+	
+             
+}
+
+
+
+
+The Given Array Element is:
+1
+51
+23
+615
+70
+63
+From The Array Element Minimum Number is:1
+
+
 
 
