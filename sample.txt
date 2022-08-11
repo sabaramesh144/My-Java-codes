@@ -1106,6 +1106,110 @@ The Given Array Element is:
 70
 63
 From The Array Element Minimum Number is:1
+****************************************************************************************************************************
+
+package practice;
+
+public class Pattern {
+
+	public static void main(String[] args) {
+	
+		for(int i=1;i<=5;i++){
+			for(int j=5;j>=i;j--) {
+				
+				System.out.print(j);
+				
+				}
+				
+	System.out.println();
+	}
+
+
+	}
+}
+
+
+Ouput
+
+54321
+5432
+543
+54
+5
+****************************************************************************
+
+package practice;
+
+public class Pattern {
+
+	public static void main(String[] args) {
+	
+		for(int i=1;i<=5;i++){
+			for(int j=5;j>=i;j--) {
+				
+				System.out.print("*");
+				
+				}
+				
+	System.out.println();
+	}
+
+
+	}
+}
+
+Output
+*****
+****
+***
+**
+*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+package practice;
+
+public class Pattern {
+
+	public static void main(String[] args) {
+	
+		for(int i=5;i>=1;i--){
+			for(int j=1;j<=i;j++) {
+				
+				System.out.print(i);
+				
+				}
+				
+	System.out.println();
+	}
+
+
+	}
+}
+
+
+Output
+
+55555
+4444
+333
+22
+1
+
+
+--------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
