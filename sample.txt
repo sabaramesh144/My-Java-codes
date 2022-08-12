@@ -1307,6 +1307,64 @@ The Even number is
 4
 6
 
+---------------------------------------------------------------------------------------
+
+package practice;
+
+public class Array {
+	
+	void rotate()
+	
+	{
+		int ar[]= {1,2,3,4,5};
+		int temp0=ar[0];
+		int temp1=ar[1];
+		for(int i=0;i<ar.length-2;i++)
+		{
+			
+			ar[i]=ar[i+2];
+			
+		}
+		ar[ar.length-1]=temp0;
+		ar[ar.length-2]=temp1;
+
+
+		for (int i=0;i<ar.length;i++) {
+			
+			System.out.println(ar[i]);
+			
+			
+			
+			
+		}
+		
+		
+		
+	}
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Array a1=new Array(); 
+		a1.rotate();
+	}
+
+}
+
+Output
+
+3
+4
+5
+2
+1
+
+
+
 
 
 
