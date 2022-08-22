@@ -1639,7 +1639,307 @@ output
 0
 0
 
-✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓
+***************************************************************************************************************
+package practice;
+
+public class sumofnumber {
+
+	public static void main(String[] args) {
+	//	int arr[] [] = new int [3] [3];
+		
+		int arr [] [] = {{1,2,3},{4,5,6},{7,8,9,} };
+
+	
+		for(int row=0 ; row<arr.length;row++)
+		{
+			for(int col=0;col<arr.length;col++) 
+			{
+		
+                       System.out.println("arr["+row+"]["+col+"]=" +arr[row] [col] );
+}
+
+			System.out.println();
+	
+	}
+
+	}
+}
+
+
+
+
+
+output
+
+arr[0][0]=1
+arr[0][1]=2
+arr[0][2]=3
+
+arr[1][0]=4
+arr[1][1]=5
+arr[1][2]=6
+
+arr[2][0]=7
+arr[2][1]=8
+arr[2][2]=9
+
+------------------------------------------------------------------
+
+
+
+package practice;
+
+public class sumofnumber {
+
+	public static void main(String[] args) {
+	//	int arr[] [] = new int [3] [3];
+		
+		int arr [] [] = {{1,2,3},{4,5,6},{7,8,9,} };
+
+	
+		for(int row=0 ; row<arr.length;row++)
+		{
+			for(int col=0;col<arr.length;col++) 
+			{
+		
+                       System.out.print(arr[row] [col] );
+}
+
+			System.out.println();
+	
+	}
+
+	}
+}
+
+
+
+
+output
+
+123
+456
+789
+---------------------------------------------------------------------
+package practice;
+
+public class sumofnumber {
+
+	public static void main(String[] args) {
+	//	int arr[] [] = new int [3] [3];
+		
+		int arr [] [] = {{1,2,3},{4,5,6}, };
+
+	
+		for(int row=0 ; row<arr.length;row++)
+		{
+			for(int col=0;col<arr.length;col++) 
+			{
+		
+                       System.out.print(arr[row] [col] );
+}
+
+			System.out.println();
+	
+	}
+
+	}
+}
+
+
+
+Output
+
+12
+45
+--------------------------------------------------
+package practice;
+
+public class sumofnumber {
+
+	public static void main(String[] args) {
+	//	int arr[] [] = new int [3] [3];
+		
+		int arr [] [] = {{1,2,3},{4,5,6}, };
+
+	
+		for(int row=0 ; row<arr.length;row++)
+		{
+			for(int col=0;col<arr[row].length;col++) 
+			{
+		
+                       System.out.print(arr[row] [col] );
+}
+
+			System.out.println();
+	
+	}
+
+	}
+}
+
+
+Output
+
+123
+456
+----------------------------------------------------------------
+Addition using two dimensional array 
+
+package practice;
+
+public class sumofnumber {
+
+	public static void main(String[] args) {
+		int arr[] [] = new int [3] [3];
+		
+		int a [] [] = {{1,2,3},{4,5,6},{7,8,9,} };
+		int b [] [] = {{5,4,2},{1,5,8},{3,8,0,} };
+		int c[] [] = new int [3] [3];
+		for(int i=0 ; i<3;i++)
+		{
+			for(int j=0;j<3;j++) 
+			{
+				
+				c[i][j]=a[i][j]+b[i][j];
+		
+                       System.out.print(c[i] [j]+" " );
+}
+
+			System.out.println();
+	
+	}
+
+	}
+}
+
+
+
+
+Output
+
+
+
+6 6 5 
+5 10 14 
+10 16 9 
+
+
+--------------------------------------------------------------
+Subraction using two dimensional array
+
+
+package practice;
+
+public class sumofnumber {
+
+	public static void main(String[] args) {
+		int arr[] [] = new int [3] [3];
+		
+		int a [] [] = {{1,2,3},{4,5,6},{7,8,9,} };
+		int b [] [] = {{5,4,2},{1,5,8},{3,8,0,} };
+		int c[] [] = new int [3] [3];
+		for(int i=0 ; i<3;i++)
+		{
+			for(int j=0;j<3;j++) 
+			{
+				
+				c[i][j]=a[i][j]-b[i][j];
+		
+                       System.out.print(c[i] [j]+" " );
+}
+
+			System.out.println();
+	
+	}
+
+	}
+}
+
+
+Output
+
+-4 -2 1 
+3 0 -2 
+4 0 9 
+
+------------------------------------------------------------------------------
+
+
+Transpose of matrix
+package practice;
+
+public class sumofnumber {
+
+	public static void main(String[] args) {
+	//	int arr[] [] = new int [3] [3];
+		
+		int a [] [] = {{1,2,3},{4,5,6},{7,8,9,} };
+		
+		int transpose [] [] = new int [3] [3];
+		for(int i=0 ; i<a.length ;i++)
+		{
+			for(int j=0;j<a.length ;j++) 
+		
+				
+				transpose[i][j]=a[j][i]	;
+		
+                   
+}
+		for(int i=0 ; i<a.length ;i++)
+		{
+			for(int j=0;j<a.length ;j++) {
+		
+				
+				System.out.print(transpose[i][j]+" " );
+		
+                   
+}
+
+		
+		
+	    
+		
+		
+			System.out.println();
+	
+	}
+
+	}
+}
+
+Output
+
+1 4 7 
+2 5 8 
+3 6 9 
+
+
+-----------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
