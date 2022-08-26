@@ -2165,6 +2165,304 @@ welcome = remove the space of our String between first and last
 
 --------------------------------------------------------------------------------
 
+1. Join Two Java Strings
+ First String: Java 
+ Second String: Programming     
+ Joined String: Java Programming
+
+
+
+
+
+
+package practice;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+      String s = "Java";
+      String s1="Programing";
+      	String con=s.concat(s1);
+      	System.out.println(con);
+      
+	
+	}
+	
+
+}
+
+
+Output
+JavaProgramming
+
+--------------------------------------------------------
+2.Compare two Strings
+  String a = "india";
+  String b = "INDIA";
+  String c = "India";
+  String d = "india";
+  Need to find which two strings are equal.
+
+
+
+
+
+
+
+package practice;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+      String a = "india";
+      String b="INDIA";
+      String c ="India";
+      String d = "india";
+      boolean  equals = a.contentEquals(d);
+      System.out.println(equals);
+      System.out.println(a.contentEquals(b));
+      System.out.println(a.contentEquals(c));
+     
+      
+     
+      
+      
+	
+	}
+	
+
+}
+
+
+Output
+true
+false
+false
+
+
+
+
+
+------------------------------------------------------------------------
+package practice;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+      String a = "india";
+      String b="INDIA";
+      String c ="India";
+      String d = "india";
+      /* boolean  equals = a.contentEquals(d);
+      System.out.println(equals);
+      System.out.println(a.contentEquals(b));
+      System.out.println(a.contentEquals(c));*/																						
+     
+      if(a==b)
+      {
+    	  
+    	  System.out.println(a.contentEquals(b));
+      }
+     
+      if (a==c)
+      {
+    	  System.out.println(a.contentEquals(c));
+    	  
+      }
+      
+      if (a==d)
+      {
+    	  System.out.println(a.contentEquals(d)); 
+    	  
+      }
+      
+	
+	}
+	
+
+}
+
+output
+true
+
+
+
+---------------------------------------------------------
+3.Input : "hello world"
+ Output: "dlrow olleh"
+
+
+
+package practice;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+      char [] a = {'h','e','l','l','o','w','o','r','l','d'};
+      
+      for (int i=0;i<a.length;i++) 
+      
+      {
+    	  System.out.print(a[i]);
+    	  
+      }
+      System.out.println();
+     for (int j=a.length-1;j>=0;j--)
+     
+     {
+    	 System.out.print(a[j]);
+    	 
+     }
+      
+	
+	}
+	
+
+}
+
+Output
+helloworld
+dlrowolleh
+
+
+---------------------------------------------------------------------------------------------------
+4. String text = " India is my country all indians are my brother and sisters";
+  a. count the number of 'i' is present in the given string
+  b. count the number of ' ' is present in the given string
+  c. all "my" should be changed to "MY".
+  d. check whether the string ="love" is present in the given string or not.
+
+
+
+
+package practice;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	
+		String a ="India is my country all indians are my brother and sisters";
+		
+		
+		int counti =0;
+		int count=0;
+		for (int i=0;i<a.length();i++)	
+		{
+			
+			if(a.charAt(i)=='i')
+			{
+				
+				counti++;
+			}
+			
+			if(a.charAt(i)==' ') 
+			{
+				count++;
+			}
+			
+		}
+		
+		
+		System.out.println("the string love is match means if true or false = "+a.matches("love"));
+	
+		  String replace =a.replaceAll("my", "MY");
+	        
+	        System.out.println(replace);
+            System.out.println(a);
+		
+	System.out.println("The times of space  present in the string  ="+count);
+	System.out.println("The times of i present in the string  ="+counti);
+	}
+	
+	
+
+}
+
+
+Output
+
+the string love is match means if true or false = false
+India is MY country all indians are MY brother and sisters
+India is my country all indians are my brother and sisters
+The times of space  present in the string  =10
+The times of i present in the string  =5
+----------------------------------------------------------------------------------------------
+
+5. input: "abcdefghijkl"
+   output: "ABCDEFGHIJKL"
+
+package practice;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		String a="abcdefghijkl";
+		
+		System.out.println(a.toUpperCase());
+	
+	}
+	
+	
+
+}
+
+
+
+Output
+
+ABCDEFGHIJKL
+
+------------------------------------------------------------------
+6.input: "abcdefghijkl"
+output: "AbCdEfGhIjKl"
+
+package practice;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String a = "abcdefghijkl";
+		
+		char [] aa = new char[a.length()];
+		for (int i=0;i<a.length();i++)
+			
+		
+		{
+			aa[i]=a.charAt(i);
+			if (i%2==0) 
+			
+			{
+				aa[i]=(char) (aa[i]-32);
+			}
+		}
+		
+	System.out.println(aa);
+	}
+	
+
+
+}
+
+
+Output
+AbCdEfGhIjKl
+
+---------------------------------------------------------------------------------------------------
 
 
 
