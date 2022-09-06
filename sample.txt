@@ -2465,6 +2465,225 @@ AbCdEfGhIjKl
 ---------------------------------------------------------------------------------------------------
 
 
+package practice;
+
+public class Car {
+	
+
+	String carName;
+	int carModel;
+	private int     price;
+	String  color;
+	
+	
+	Car (String carName,int carModel,int price,String color )	{
+		
+		this.carName=carName;
+		this.carModel=carModel;
+	    this.price=price;
+		this.color=color;
+		
+		
+	}
+
+
+
+
+
+	public int getPrice() {
+		return price;
+	}
+
+
+
+
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public static void cardetails(Car[] cararr) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(" The car Names & Model ");      
+		for (int i=0;i<cararr.length;i++)
+		
+		{
+		   System.out.println(cararr[i].carName);
+		   System.out.println(cararr[i].carModel);
+		   System.out.println();
+			
+		}
+		
+		
+		
+		System.out.println(" The car Names ");
+		for (int j=0;j<cararr.length;j++){
+			
+		{
+		   System.out.println(cararr[j].carName);
+		
+			
+		}
+		
+	}
+		
+		
+	}
+	
+		public static void pricedetails(Car [] cararr ) {
+			int max =cararr[0].getPrice();
+		    Car a = cararr[0];
+		for (int j=0;j<cararr.length;j++)
+			
+		{
+		 
+			if(cararr[j].getPrice()>max)
+	        {
+	            max = cararr[j].getPrice();
+	            a=cararr[j];
+	        }
+			 
+			
+		}
+		
+		   System.out.println();
+
+		
+System.out.println("The Maximum price of the car  = "+max);
+System.out.println("The full details Maximum price of "+a);
+	}
+
+		public static void minimumprice(Car[] cararr) {
+			int min =cararr[0].getPrice();
+		    Car b = cararr[0];
+		for (int l=0;l<cararr.length;l++)
+			
+		{
+		 
+			if(cararr[l].getPrice()<min)
+	        {
+	            min = cararr[l].getPrice();
+	            b=cararr[l];
+	        }
+			 
+			
+		}
+		   System.out.println();
+
+		System.out.println("The Maximum price of the car  = "+min);
+		System.out.println("The full details Minimum price of "+b);
+		System.out.println( " Car details for the given colour ");
+			
+		}
+		
+		
+
+		public static void carcolor(Car[] cararr,String color) {
+			
+			for(int z=0;z<cararr.length;z++) {
+				
+				
+				{
+				
+				if (cararr[z].color=="Black") 
+				{
+					
+				System.out.println(cararr[z]);
+				
+					}
+				}
+				
+				
+			}
+		}
+		
+		
+		
+	@Override
+	public String toString() {
+		return "Car [carName=" + carName + ", carModel=" + carModel + ", price=" + price + ", color=" + color + "]";
+	}
+	
+	
+	
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Car c1 = new Car("Polo",2012,1500000,"Black");
+		Car c2 = new Car("Swift",2014,1000000,"White");
+		Car c3 = new Car("Innova",2018,3500000,"Silver");
+		Car c4 = new Car("Aventador",2020,90000000,"Blue");
+		Car c5 = new Car("Thar",2021,1200000,"Black");
+		System.out.println(c1);
+		System.out.println(c2);
+		System.out.println(c3);
+		System.out.println(c4);
+		System.out.println(c5);
+	
+		Car cararr[]= new Car[5];
+		
+		cararr [0]=c1;
+		cararr [1]=c2;
+		cararr [2]=c3;
+		cararr [3]=c4;
+		cararr [4]=c5;
+		
+		cardetails(cararr);
+		pricedetails(cararr);
+		minimumprice(cararr);
+		carcolor(cararr,"Black");
+	}
+	
+
+
+
+
+}
+
+
+Output
+
+
+
+Car [carName=Polo, carModel=2012, price=1500000, color=Black]
+Car [carName=Swift, carModel=2014, price=1000000, color=White]
+Car [carName=Innova, carModel=2018, price=3500000, color=Silver]
+Car [carName=Aventador, carModel=2020, price=90000000, color=Blue]
+Car [carName=Thar, carModel=2021, price=1200000, color=Black]
+ The car Names & Model 
+Polo
+2012
+
+Swift
+2014
+
+Innova
+2018
+
+Aventador
+2020
+
+Thar
+2021
+
+ The car Names 
+Polo
+Swift
+Innova
+Aventador
+Thar
+
+The Maximum price of the car  = 90000000
+The full details Maximum price of Car [carName=Aventador, carModel=2020, price=90000000, color=Blue]
+
+The Maximum price of the car  = 1000000
+The full details Minimum price of Car [carName=Swift, carModel=2014, price=1000000, color=White]
+ car details for the given colour 
+Car [carName=Polo, carModel=2012, price=1500000, color=Black]
+Car [carName=Thar, carModel=2021, price=1200000, color=Black]
 
 
 
