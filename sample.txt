@@ -3027,6 +3027,123 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 6, e
 	at practice.Exceptionhandling.forloop(Exceptionhandling.java:12)
 	at practice.Exceptionhandling.main(Exceptionhandling.java:27)
 ------------------------------------------------------------------------------------------------------
+Throws
+package practice;
+
+public class Exceptionhandling {
+	
+	
+	static void bank(int ammount) {
+		
+		
+		if(ammount<=0)
+		{
+		throw new ArithmeticException("Please enter valid Ammount");
+		}
+		else
+		{
+			
+			System.out.println("Your ammount is credited");
+		}
+	}
+
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		 bank(-5);
+		
+	}
+
+}
+
+Output
+Exception in thread "main" java.lang.ArithmeticException: Please enter valid Ammount
+	at practice.Exceptionhandling.bank(Exceptionhandling.java:11)
+	at practice.Exceptionhandling.main(Exceptionhandling.java:27)
+------------------------------------------------------------------------------------------------------------------------------------
+package practice;
+
+public class Exceptionhandling {
+	
+	
+	static void bank(int ammount) {
+		
+		
+		if(ammount<=0)
+		{
+		throw new ArithmeticException("Please enter valid Ammount");
+		}
+		else
+		{
+			
+			System.out.println("Your ammount is credited");
+		}
+	}
+
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		 bank(50525);
+		
+	}
+
+}
+
+
+Output
+Your ammount is credited
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+
+package practice;
+
+public class Throw {
+
+	static void divide(int a, int b) throws ArithmeticException,NullPointerException{
+		
+	/*int c = a/b;
+	System.out.println(c);*/
+	
+	String s=null;  
+	System.out.println(s.length());//NullPointerException  
+	
+	
+	}
+	public static void main(String[] args) {
+		
+			try {
+				divide(12,0);
+			} catch (ArithmeticException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+		
+		System.out.println("Code completed");
+		
+	}
+
+}
+
+Output
+Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is null
+	at practice.Throw.divide(Throw.java:11)
+	at practice.Throw.main(Throw.java:18)
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
