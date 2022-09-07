@@ -2685,7 +2685,348 @@ The full details Minimum price of Car [carName=Swift, carModel=2014, price=10000
 Car [carName=Polo, carModel=2012, price=1500000, color=Black]
 Car [carName=Thar, carModel=2021, price=1200000, color=Black]
 
+--------------------------------------------------------------------------------------------------------------------------------------------
+Exceptionhandling
 
+package practice;
+
+public class Exceptionhandling {
+	
+	 static void maths()
+	{
+		int a = 5/0;
+		System.out.println(a);
+	}
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		maths();
+		
+	}
+
+}
+ 
+
+output
+
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at practice.Exceptionhandling.maths(Exceptionhandling.java:7)
+	at practice.Exceptionhandling.main(Exceptionhandling.java:18)
+---------------------------------------------------------------------------------------------------------------
+
+
+package practice;
+
+public class Exceptionhandling {
+	
+	 static void maths()
+	{
+		int a = 5/0;
+		System.out.println(a);
+	}
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		try {
+			maths();
+		} catch (ArithmeticException e ) {
+			System.out.println(e);
+			
+		}
+		
+	
+		
+	}
+
+}
+
+
+
+
+
+Output
+
+java.lang.ArithmeticException: / by zero
+----------------------------------------------------------------------------------------------
+package practice;
+
+public class Exceptionhandling {
+	
+	 static void maths()
+	{
+		int a = 5/0;
+		System.out.println(a);
+	}
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		try {
+			maths();
+		} catch (ArithmeticException e ) {
+			System.out.println("Can't able divide by zero");
+			
+		}
+		
+	
+		
+	}
+
+}
+
+
+
+
+Output
+Can't able divide by zero
+
+---------------------------------------------------------------------------------------------
+
+
+package practice;
+
+public class Exceptionhandling {
+	
+	 static void maths()
+	{
+		int a = 5/0;
+		System.out.println(a);
+	}
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			maths();
+		} catch (ArithmeticException e) {
+			// TODO Auto-generated catch block
+			
+			e.printStackTrace();
+			System.out.println("Cant able to divide by zero");
+		}
+		catch (ArrayIndexOutOfBoundsException  e) {
+			// TODO Auto-generated catch block
+			
+			e.printStackTrace();
+		
+		}
+		catch (Exception  e) {
+			// TODO Auto-generated catch block
+			
+			e.printStackTrace();
+		
+		}
+		
+		
+	}
+
+}
+
+
+Output
+java.lang.ArithmeticException: / by zero
+	at practice.Exceptionhandling.maths(Exceptionhandling.java:7)
+	at practice.Exceptionhandling.main(Exceptionhandling.java:17)
+Cant able to divide by zero
+------------------------------------------------------------------------------------------------------------------------------------
+package practice;
+
+public class Exceptionhandling {
+	
+	 static void maths()
+	{
+		int a = 5/0;
+		System.out.println(a);
+	}
+	 static void forloop() {
+			String s = "happy";
+			s.substring(6,78);
+					int[] arr = {3,4,5,6,9};
+			    	   for(int x=0; x<6; x++){
+			    		   System.out.println(arr[x]);}
+		
+		}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+			try {
+				forloop();
+				
+			} catch (ArrayIndexOutOfBoundsException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			System.out.println("Out of array length ");
+			}
+		catch ( StringIndexOutOfBoundsException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		System.out.println("Out of String length index");
+		}
+			
+		
+		
+			catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+		
+		
+		
+	}
+
+}
+
+Output
+
+java.lang.StringIndexOutOfBoundsException: begin 6, end 78, length 5
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4601)
+	at java.base/java.lang.String.substring(String.java:2704)
+	at practice.Exceptionhandling.forloop(Exceptionhandling.java:12)
+	at practice.Exceptionhandling.main(Exceptionhandling.java:27)
+Out of String length index
+-----------------------------------------------------------------------------------------------------
+
+package practice;
+
+public class Exceptionhandling {
+	
+	 static void maths()
+	{
+		int a = 5/0;
+		System.out.println(a);
+	}
+	 static void forloop() {
+			String s = "happy";
+			s.substring(6,78);
+					int[] arr = {3,4,5,6,9};
+			    	   for(int x=0; x<6; x++){
+			    		   System.out.println(arr[x]);}
+		
+		}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+			try {
+				forloop();
+				
+			} catch (ArrayIndexOutOfBoundsException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			System.out.println("Out of array length ");
+			}
+		catch ( StringIndexOutOfBoundsException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		System.out.println("Out of String length index");
+		}
+			
+		
+		
+			catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			finally
+			{
+				System.out.println("End of the code");
+			}
+		
+		
+		
+	}
+
+}
+
+Output
+java.lang.StringIndexOutOfBoundsException: begin 6, end 78, length 5
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4601)
+	at java.base/java.lang.String.substring(String.java:2704)
+	at practice.Exceptionhandling.forloop(Exceptionhandling.java:12)
+	at practice.Exceptionhandling.main(Exceptionhandling.java:27)
+Out of String length index
+End of the code
+
+----------------------------------------------------------------------------------------------------------------
+
+
+package practice;
+
+public class Exceptionhandling {
+	
+	 static void maths()
+	{
+		int a = 5/0;
+		System.out.println(a);
+	}
+	 static void forloop() {
+			String s = "happy";
+			s.substring(6,78);
+					int[] arr = {3,4,5,6,9};
+			    	   for(int x=0; x<6; x++){
+			    		   System.out.println(arr[x]);}
+		
+		}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+			try {
+				forloop();
+				
+			} 
+			
+			finally
+			{
+				System.out.println("End of the code");
+			}
+		
+		
+		
+	}
+
+}
+Output
+
+End of the code
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 6, end 78, length 5
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4601)
+	at java.base/java.lang.String.substring(String.java:2704)
+	at practice.Exceptionhandling.forloop(Exceptionhandling.java:12)
+	at practice.Exceptionhandling.main(Exceptionhandling.java:27)
+------------------------------------------------------------------------------------------------------
 
 
 
