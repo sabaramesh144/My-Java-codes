@@ -3143,6 +3143,75 @@ Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------
+User defined Exception
+
+
+
+package practice;
+
+public class LimitedSpaceException extends Exception {
+
+	    
+	LimitedSpaceException(String Message)
+	{
+	super(Message);
+	}
+	
+}
+
+
+package practice;
+
+public class Exceptionhandling {
+	
+	
+
+		void bus(int seat ) throws LimitedSpaceException
+		{
+			if(seat>70) 
+			{
+			throw new LimitedSpaceException ("You have only 70 Seats in bus");
+		            }
+			
+			else if(seat<=0)
+			{
+				
+				throw new LimitedSpaceException ("PLease enter valid seat number");
+			}
+			
+			
+			else 
+			{
+				System.out.println("you have seats");
+			}
+		}
+		
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Exceptionhandling e1 = new Exceptionhandling();
+			
+		try {
+			e1.bus(77);
+		} catch (LimitedSpaceException e) {
+			// TODO Auto-generated catch block
+	         System.out.println(e.getMessage());
+		}
+		
+	}
+
+}
+
+
+
+Output
+You have only 70 Seats in bus
+
+
+--------------------------------------------------------------------------------------------
 
 
 
