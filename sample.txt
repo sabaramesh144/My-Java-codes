@@ -1,4 +1,4 @@
-Bb
+A
 
 public class myprogram  
 
