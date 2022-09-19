@@ -1,4 +1,4 @@
-A
+
 
 public class myprogram  
 
@@ -3215,11 +3215,87 @@ You have only 70 Seats in bus
 
 --------------------------------------------------------------------------------------------
 
+Collection
+
+ArrayList and LinkedList
+
+
+package practice;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class test {
+
+	public static void main(String[] args) {
+		ArrayList aa= new ArrayList();
+		ArrayList a = new ArrayList();
+		
+		aa.add("ArrayList");
+		aa.add(1);
+		aa.add(10);
+		aa.add('h');
+		aa.add(1);
+		aa.add(4.0);
+		aa.add("End");
+		System.out.println("Print index value of List  = "+aa.get(3));
+        System.out.println(aa.clone());
+		System.out.println("Clone (take copy of list) " + aa);
+		a.add(1);
+		a.add(2);
+		a.add(3);
+		a.add(4);
+		a.add(5);
+		aa.addAll(a);
+	    System.out.println("Combine both list by using addall() method = " +aa);
+	    
+	    
+	    
+	    
+	System.out.println("LinkedList");	       
+	    
+	    
+    LinkedList Ll=new LinkedList();  
+    Ll.add("LinkedList");
+    Ll.add(1);
+    Ll.add(1025);
+    Ll.add(4.0);
+    Ll.add('e');
+    Ll.offerLast("End Linked List");
+     
+    
+ 
+		  
+  
+
+
+	
+	  System.out.println("The Size of Linked list = "+Ll.size());
+	  System.out.println("It peeks last element of list = " + Ll.peekLast());
+	  System.out.println("It Takes Head element = "+Ll.pollFirst());
+	  System.out.println("It Takes Last element = "+Ll.pollLast());
+	  System.out.println("Pops an element from the stack represented by this list = "+Ll.pop());
+
+}
+}
 
 
 
 
+Output
+Print index value of List  = h
+[ArrayList, 1, 10, h, 1, 4.0, End]
+Clone (take copy of list) [ArrayList, 1, 10, h, 1, 4.0, End]
+Combine both list by using addall() method = [ArrayList, 1, 10, h, 1, 4.0, End, 1, 2, 3, 4, 5]
+LinkedList
+The Size of Linked list = 6
+It peeks last element of list = End Linked List
+It Takes Head element = LinkedList
+It Takes Last element = End Linked List
+Pops an element from the stack represented by this list = 1
 
+=============================================================================================
 
 
 
