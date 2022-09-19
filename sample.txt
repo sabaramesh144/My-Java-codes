@@ -3296,7 +3296,71 @@ It Takes Last element = End Linked List
 Pops an element from the stack represented by this list = 1
 
 =============================================================================================
+ HashSet and LinkedHashSet
 
+package practice;
+
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+public class test {
+
+	public static void main(String[] args) {
+		HashSet aa= new HashSet();
+		HashSet a = new HashSet();
+		
+		aa.add("HashSet");
+		aa.add(1);
+		aa.add(10);
+		aa.add('h');
+		aa.add(1);
+		aa.add(4.0);
+		aa.add("End");
+        System.out.println(aa.clone());
+		System.out.println("Clone (take copy of set) " + aa);
+		a.add(1);
+		a.add(2);
+		a.add(3);
+		a.add(4);
+		a.add(5);
+		aa.addAll(a);
+	    System.out.println("Combine both list by using addall() method = " +aa);
+	    
+	    
+	    
+	    
+	    
+System.out.println("LinkedHashSet");	    
+	    
+    LinkedHashSet Ll=new LinkedHashSet();  
+    Ll.add("LinkedList");
+    Ll.add(1);
+    Ll.add(1025);
+    Ll.add(4.0);
+    Ll.add(4.0);
+    Ll.add('e');
+    Ll.add("End LinkedList");
+    
+ 
+		  
+  System.out.println(Ll);
+
+
+	
+	  System.out.println("The Size of Linked Set = "+Ll.size());
+	  
+}
+}
+
+Output
+[4.0, 1, h, 10, End, HashSet]
+Clone (take copy of set) [4.0, 1, h, 10, End, HashSet]
+Combine both list by using addall() method = [4.0, 1, 2, 3, 4, 5, h, 10, End, HashSet]
+LinkedHashSet
+[LinkedList, 1, 1025, 4.0, e, End LinkedList]
+The Size of Linked Set = 6
+
+
+=========================================================================================
 
 
 
