@@ -3364,6 +3364,40 @@ The Size of Linked Set = 6
 
 
 
+TreeSet
+
+
+package practice;
+
+import java.util.TreeSet;
+
+public class test {
+
+	public static void main(String[] args) {	
+		
+		
+		TreeSet ts= new TreeSet();
+		ts.add(59);
+		ts.add(1450);
+		ts.add(64);
+		ts.add(-8);
+		ts.add(3);
+		ts.add(5);
+	    ts.add(3);
+	    
+	    System.out.println(ts);
+	    
+  }
+}
+
+
+
+Output
+[-8, 3, 5, 59, 64, 1450]
+
+
+
+=====================================================================
 
 
 
